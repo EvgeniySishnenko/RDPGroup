@@ -1,0 +1,43 @@
+extends ../template
+
+block variables
+    - var title = 'Тестовое задание RDP Group'
+
+block content
+    .container.container__index
+        header.header
+            .header-top
+                .logo
+                    h1.h1__title Лого
+                .header__button
+                    button.btn Связь с нами
+        section.section
+            .gallery
+                ul.gallery__list
+                    -for(var i = 0; i < 4; i++) {
+                        li.gallery__items Текст
+                    -}
+        .popup
+            form.form
+                ul.form__list
+                    li.form__item
+                        input(type="text" placeholder="ФИО" required ).form__input
+                    li.form__item
+                        input(type="email" placeholder="Email" required ).form__input
+                    li.form__item
+                        textarea(placeholder="Сообщение" required ).form__textarea
+                    li.form__item
+                        input(type="submit" value="Отправить").form__btn.btn
+            .close
+              .close_line1
+              .close_line2   
+                    
+
+
+            
+    
+    
+
+
+
+                                

@@ -1,0 +1,145 @@
+.container__index
+    border 1px solid dark  
+    font()
+    margin-top 16px
+    position relative
+.header
+    padding 0 16px
+    width 100%
+    height 150px
+.header-top
+    width 100%
+    height 70px
+    display flex
+    justify-content space-between
+    align-items center 
+.h1__title
+    font(Rm, 20px)
+.btn
+    display block
+    height 35px
+    border 1px solid dark
+    background-color orange
+    cursor pointer
+    &:focus 
+        outline none
+    &:hover
+        background-color darken(orange, 10%)
+        tran(background-color)
+.section
+    border-top 1px solid dark
+    min-height 600px
+    padding 20px 20px 0 20px
+    +adapt(480px)
+        padding 20px 10px 0 10px
+.gallery__list
+    width 100%
+    display flex
+    justify-content space-between
+    +adapt(480px)
+        overflow-x auto
+        padding-bottom 16px
+        &::-webkit-scrollbar { width: 4px; height: 8px;}
+        &::-webkit-scrollbar-button {  display: none; }
+        &::-webkit-scrollbar-track {  background-color: #626262;}
+        &::-webkit-scrollbar-track-piece { background-color: #ffffff;}
+        &::-webkit-scrollbar-thumb { height: 50px; background-color: #626262; border-radius: 3px;}
+.gallery__items
+    width 200px
+    height 90px
+    border 1px solid dark
+    padding 16px 16px 0 16px
+    +adapt(890px)
+        margin-left 10px
+        &:first-child
+            margin-left 0
+    +adapt(480px)
+        min-width calc(50% - 5px)
+.popup
+    display none
+    position absolute
+    width 300px
+    top 50%
+    left 50%
+    transform translate(-50%, -50%)
+    padding 16px 10px
+    border 1px solid dark
+    background-color #fff
+    box-shadow -1px -2px 30px -1px rgba(175,175,175,1)
+    +adapt(480px)
+        width 100%
+.popup-show
+    display block
+.form__item
+    margin-top 10px
+    &:first-child
+        margin-top 0
+    &:last-child
+        margin-top 50px
+.form__input
+    width 100%
+    height 40px
+    border 1px solid dark
+    outline none 
+    &:focus 
+        outline none
+    &::-webkit-input-placeholder
+        font()
+        padding-left 10px
+    &:-ms-input-placeholder
+        font()
+        padding-left 10px
+    &::-ms-input-placeholder
+        font()
+        padding-left 10px
+    &::placeholder
+        font()
+        padding-left 10px
+    
+.form__textarea
+    width 100%
+    height 100px
+    border 1px solid dark
+    outline none 
+    resize none
+    &:focus 
+        outline none
+    &::-webkit-input-placeholder
+        font()
+        padding-left 10px
+        padding-top 5px
+    &:-ms-input-placeholder
+        font()
+        padding-left 10px
+         padding-top 5px
+    &::-ms-input-placeholder
+        font()
+        padding-left 10px
+        padding-top 5px
+    &::placeholder
+        font()
+        padding-left 10px
+        padding-top 5px
+.form__btn
+    width 100%
+    color #fff
+.close
+    position absolute
+    top -10px
+    right -20px
+    z-index 10
+    width 20px
+    height 16px
+    cursor pointer
+    +adapt(480px)
+        top -20px
+        right 5px
+.close_line1,
+.close_line2
+    width 100%
+    height 2px
+    background-color dark 
+.close_line1
+    transform rotate(-44deg) translateY(4px) translateX(-4px)
+.close_line2
+    transform rotate(44deg) translateY(3px) translateX(3px)
